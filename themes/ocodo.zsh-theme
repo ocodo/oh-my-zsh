@@ -17,8 +17,8 @@ obreak2="
 "
 # The final % (or #) prompt is always on a new line.
 
-PROMPT='$FG[$Bc][$FG[$Nc]%n $FG[$Mc]@%M$FG[$Bc]|$FG[Tc]%D{%I:%M%p} $FG[Dc]%D{%a %d/%b}$FG[$Bc]]$obreak1$FG[$Bc][$(git_prompt_info)$FG[116]$(rvm_prompt_info)$FG[$Bc]]$obreak2$FG[$Bc][$FG[Pc]%~$FG[$Bc]]
-$FG[$Bc]%# $reset_color'
+PROMPT="$FG[$Bc][%# $FG[$Nc]%n$FG[$Mc]@%M$FG[$Bc]|$FG[Tc]%D{%I:%M%p} $FG[Dc]%D{%a %d/%b} (%D{%z})$FG[$Bc]]$obreak1$FG[$Bc][$(git_prompt_info)$FG[116]$(rvm_prompt_info)$FG[$Bc]]$obreak2$FG[$Bc][$FG[Pc]%~$FG[$Bc]]$FG[$Bc]$reset_color 
+"
 
 # git theming
 ZSH_THEME_GIT_PROMPT_PREFIX="$fg_bold[red]($fg_bold[white]"
